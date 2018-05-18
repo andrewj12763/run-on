@@ -1,1 +1,0 @@
-SELECT * FROM runon_db.words;
