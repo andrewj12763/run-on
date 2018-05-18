@@ -20,14 +20,8 @@ app.use(express.static('app'));
 app.engine(".hbs", exphbs({ defaultLayout: "main", extname: '.hbs' }));
 app.set("view engine", ".hbs");
 
-var connection = mysql.createConnection({
-	host: "localhost",
-  user: "root",
-  password: "yolo",
-  database: "runon_db"
-});
 
-var PORT = 5000;
+var PORT = process.env.PORT || 5000;
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
