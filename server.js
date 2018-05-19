@@ -28,18 +28,3 @@ app.listen(PORT, function() {
   // Log (server-side) when our server has started
 	console.log("Server listening on: http://localhost:" + PORT);
 });
-
-// var gamenames;
-
-// function gamenames() {
-//   connection.query("SELECT wish FROM runon_db.activegames;", function(err, res) {
-//     if (err) throw err;
-
-//     // Log all results of the SELECT statement
-// 		// console.log(res);
-// 		gamenames = res;
-// 		connection.end();
-//   });
-// }
-
-// gamenames();
